@@ -1,0 +1,19 @@
+ Write a Python program to input the sides of a triangle and check whether the triangle is valid or not.
+a + b > c 
+a + c > b
+b + c > a
+
+program:
+a = int(input("Enter side a: "))
+b = int(input("Enter side b: "))
+c = int(input("Enter side c: "))
+if a + b > c and a + c > b and b + c > a:
+    print("The triangle is valid.")
+else:
+    print("The triangle is not valid."
+
+output: 
+Enter side a: 6
+Enter side b: 9
+Enter side c: 5
+The triangle is valid
