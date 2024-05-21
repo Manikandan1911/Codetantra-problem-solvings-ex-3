@@ -1,0 +1,26 @@
+.Write a python program that accepts the marks in 3 subjects of a student, calculates the average mark of the student and prints the student's grade. If the average mark is greater than or equal to 90, then the grade is 'A'. If the average mark is 80 and between 80 and 90, then the grade is 'B'. If the average mark is 70 and between 70 and 80, then the grade is 'C'. If the average mark is 60 and between 60 and 70, then the grade is 'D'. If the average mark is 50 and between 50 and 60, then the grade is 'E'. If the average mark is less than 50, then the grade is 'F'.
+ 
+program:
+ subject1 = int(input("Enter the mark in subject 1: "))
+subject2 = int(input("Enter the mark in subject 2: "))
+subject3 = int(input("Enter the mark in subject 3: "))
+average_mark = (subject1 + subject2 + subject3) / 3
+if average_mark >= 90:
+    grade = 'A'
+elif average_mark >= 80:
+    grade = 'B'
+elif average_mark >= 70:
+    grade = 'C'
+elif average_mark >= 60:
+    grade = 'D'
+elif average_mark >= 50:
+    grade = 'E'
+else:
+    grade = 'F'
+print("The student's grade is", grade)
+
+output:
+ Enter the mark in subject 1: 90
+Enter the mark in subject 2: 85
+Enter the mark in subject 3: 80
+The student's grade is B
