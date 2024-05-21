@@ -1,0 +1,15 @@
+n=int(input("Enter how many values do you want to read : "))
+print(f"Enter {n}",end=' ')
+s=input("values : ").split()
+l=[]
+for i in range(n):
+    l.append(int(s[i]))
+i,p,n=0,0,0
+while i<len(l):
+    if l[i]>=0:
+        p+=1
+    else:
+        n+=1
+    i+=1
+print("The number of positive numbers :",p)
+print("The number of negative numbers :",n)
