@@ -1,0 +1,12 @@
+def is_perfect_square(num):
+    square_root = int(num ** 0.5)
+    return square_root * square_root == num
+def main():
+    num = int(input("Enter any integer: "))
+  if is_perfect_square(num):
+        print("Yes")
+    else:
+        print("No")
+if _name_ == "_main_":
+    main()
+
