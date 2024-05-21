@@ -1,0 +1,22 @@
+Write a python program to check whether the given number is a perfect square or not.
+
+
+program:
+import math
+def is_perfect_square(number):
+    if number < 0:
+        return False
+    square_root = math.sqrt(number)
+    return square_root.is_integer()
+print(is_perfect_square(16))  
+print(is_perfect_square(20))  
+print(is_perfect_square(25))  
+print(is_perfect_square(30))  
+print(is_perfect_square(-16))
+
+output;
+True
+False
+True
+False
+False
