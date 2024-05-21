@@ -1,0 +1,19 @@
+ Write a python program for finding the largest of three given numbers.
+
+programs:
+ num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+num3 = int(input("Enter third number: "))
+if (num1 >= num2) and (num1 >= num3):
+    largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+    largest = num2
+else:
+    largest = num3
+print("The largest of the three numbers is:", largest)
+
+output:
+ Enter first number: 2
+Enter second number: 3
+Enter third number: 9
+The largest of the three numbers is: 9
