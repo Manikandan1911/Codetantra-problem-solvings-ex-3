@@ -1,0 +1,20 @@
+def calculate_bill(units):
+    if units <= 199:
+        charge_per_unit = 1.20
+    elif units <= 399:
+        charge_per_unit = 1.50
+    elif units <= 599:
+        charge_per_unit = 1.80
+    else:
+        charge_per_unit = 2.00
+    total_amount = units * charge_per_unit
+    if total_amount > 400:
+        surcharge = total_amount * 0.15
+        total_amount += surcharge
+    if total_amount < 100:
+        total_amount = 100
+    return total_amount
+units_consumed = int(input("Input: "))
+bill_amount = calculate_bill(units_consumed)
+print("Output:")
+print("{:.2f}".format(bill_amount))
