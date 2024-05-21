@@ -1,0 +1,13 @@
+ Write a python program to extract the last two digits of a given integer n, where the number of digits should be greater than 2
+
+program:
+n = int(input("Enter an integer with more than 2 digits: "))
+if len(str(n)) > 2:
+    last_two_digits = n % 100
+    print("The last two digits of", n, "are:", last_two_digits)
+else:
+    print("The number of digits should be greater than 2.")
+
+output:
+ Enter an integer with more than 2 digits: 123
+The last two digits of 123 are: 23
