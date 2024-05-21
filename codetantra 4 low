@@ -1,0 +1,13 @@
+a,b=input().split()
+a,b=int(a),int(b)
+n,s=0,0
+for i in range(a,b+1):
+    if i%9==0:
+        print(i,end=" ")
+        n+=1
+        s+=i
+print("\nNo of integers:",n)
+print("Sum:",s)
+
+
+
