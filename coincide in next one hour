@@ -1,0 +1,13 @@
+Given time in hours, Write a program to find the time in minute at which the minute hand and hour hand coincide in next one hour.python program
+
+program:
+current_time_hours = float(input("Enter the current time in hours: "))
+minutes_per_hour = 60
+minutes_per_revolution = 360 * minutes_per_hour
+minutes_per_hour_hand_revolution = minutes_per_revolution / 12
+minutes_per_minute_hand_revolution = minutes_per_revolution / 60
+current_time_minutes = (current_time_hours * minutes_per_hour) + (current_time_hours * minutes_per_hour_hand_revolution / minutes_per_hour)
+minute_hand_angle = current_time_minutes * minutes_per_minute_hand_revolution / minutes_per_hour
+
+output:
+Enter the current time in hours: 2
