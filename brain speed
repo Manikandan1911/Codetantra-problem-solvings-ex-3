@@ -1,0 +1,6 @@
+
+X, Y = map(int, input().strip().split())
+if Y > X:
+    print("YES")
+else:
+    print("NO")
