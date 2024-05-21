@@ -1,0 +1,8 @@
+n=int(input("Enter how many values do you want to read : "))
+print(f"Enter {n}",end=" ")
+l=input("Values : ").split()
+i,s=0,0
+while i<len(l):
+    s+=int(l[i])
+    i+=1
+print(f"Sum of given values : {s}")
